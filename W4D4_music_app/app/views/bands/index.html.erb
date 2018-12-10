@@ -1,0 +1,4 @@
+<% view = Proc.new { |id| band_url(id) } %>
+<% edit = Proc.new { |id| edit_band_url(id) } %>
+
+<%= render 'shared/standard_list', title: 'Bands', records: @bands, view: view, edit: edit %>

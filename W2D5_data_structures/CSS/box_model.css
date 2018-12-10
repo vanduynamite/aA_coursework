@@ -1,0 +1,23 @@
+div {
+ padding: 0px 5px 0px 5px;
+ margin: 50px 50px 50px 50px;
+ border: 5px solid black;
+ height: 20px;
+ width: 200px;
+}
+
+#first-div {
+  background-color: #39cccc;
+}
+
+#second-div {
+  /* box-sizing: border-box; */
+  background-color: #ff4136;
+  max-height: 800px;
+  overflow-y: visible;
+}
+
+
+p {
+  background-color: #7fdbff;
+}

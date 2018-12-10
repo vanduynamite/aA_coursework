@@ -1,0 +1,21 @@
+<h1><%= @sub.title %></h1>
+<h4><%= @sub.description %></h4>
+<a href="<%= edit_sub_url %>">Edit Sub</a>
+<h2>Posts</h2>
+<a href="<%= new_post_url %>">Create Post</a>
+<ul>
+  <% @sub.posts.each do |post| %>
+    <li>
+      <h4><%= post.title %></h4>
+      <% if post.user == current_user %>
+        <a href="<%= edit_post_url(post) %>">Edit Post</a>
+      <% end %>
+      <br>
+      <% if post.url %>
+        Link: <a href="<%= post.url %>"> <%= post.url %></a>
+        <br>
+      <% end %>
+      <%= post.content %>
+    </li>
+  <% end %>
+</ul>

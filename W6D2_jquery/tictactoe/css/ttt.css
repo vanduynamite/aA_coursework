@@ -1,0 +1,67 @@
+h1 {
+  text-align: center;
+  font-size: 52px;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+
+.ttt {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+
+  text-align: center;
+  line-height: 80px;
+}
+
+.tile {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.tile:hover {
+  background-color: yellow;
+}
+
+.picked-tile {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: white;
+}
+
+.winner-tile {
+  background-color: green;
+  color: white;
+}
+
+.loser-tile {
+  background-color: white;
+  color: red;
+}

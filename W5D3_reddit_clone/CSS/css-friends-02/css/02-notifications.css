@@ -1,0 +1,15 @@
+/* PHASE 2: Notifications */
+
+
+
+.badge {
+  padding: 4px 8px;
+  background-color: #000;
+  border-radius: 25px;
+  font-size: 12px;
+  transition: .25s;
+}
+
+.header-list li a:hover > .badge {
+  background-color: #f00;
+}

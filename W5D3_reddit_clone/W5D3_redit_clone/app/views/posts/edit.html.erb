@@ -1,0 +1,28 @@
+<h1>Edit Post in <%= @post.subreddit.title %></h1>
+
+<form action="<%= post_url(@post) %>" method="post">
+  <%= auth_token %>
+  <input type="hidden" name="_method" value="patch">
+  <label for="">
+    Title
+    <input type="text" name="post[title]" value="<%= @post.title %>">
+  </label>
+
+  <br><br>
+
+  <label for="">
+    URL
+    <input type="text" name="post[url]" value="<%= @post.url %>">
+  </label>
+
+  <br><br>
+
+  <label for="">
+
+    <textarea name="post[content]" rows="8" cols="80"><%= @post.content %></textarea>
+  </label>
+
+  <br><br>
+
+  <input type="submit" name="" value="Update Post">
+</form>

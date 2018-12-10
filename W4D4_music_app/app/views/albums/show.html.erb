@@ -1,0 +1,4 @@
+<% view = Proc.new { |id| track_url(id) } %>
+<% edit = Proc.new { |id| edit_track_url(id) } %>
+
+<%= render 'shared/single_view', record: @album, children: @album.tracks, view: view, edit: edit %>

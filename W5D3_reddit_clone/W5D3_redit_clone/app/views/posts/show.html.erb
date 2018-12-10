@@ -1,0 +1,14 @@
+<h1><%= @post.title %></h1>
+<h3>By: <%= @post.user.username %></h3>
+
+<a href="<%= edit_post_url(@post) %>">Edit Post</a>
+<ul>
+  <li>
+    <%= @post.title %>
+    <%= @post.url if @post.url%>
+    <%= @post.content %>
+  </li>
+</ul>
+
+
+<a href="<%= subs_url %>">Back to All Subs</a>

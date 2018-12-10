@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W4D4MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Magic Music App</h1>
+
+    <% unless flash[:errors].nil? %>
+      <ul><% flash[:errors].each do |err| %>
+        <li><%= err %></li>
+      <% end %></ul>
+    <% end %>
+
+    <% if logged_in? %>
+      Welcome, <%= current_user.email %>!
+      <form action="<%= session_url %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="hidden" name="authenticity_token">
+
+        <input type="submit" name="" value="Log out">
+      </form>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

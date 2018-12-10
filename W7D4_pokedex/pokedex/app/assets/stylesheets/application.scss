@@ -1,0 +1,224 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "variables";
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   font-family: sans-serif;
+   background: white;
+   color: $grey;
+   font-size: 12px;
+   height: 100%;
+ }
+
+ header {
+   display: flex;
+   justify-content: center;
+   background-color: $red;
+   padding: 10px;
+   border-bottom: 3px solid black;
+
+   img {
+     width: 43px;
+     height: 43px;
+   }
+ }
+
+ nav {
+   width: 900px;
+   background-color: $red;
+   padding: 6px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   ul {
+     display: flex;
+     justify-content: flex-end;
+
+     li {
+       a {
+         background-color: white;
+         border-radius: 4px;
+         color: $grey;
+         font-weight: 700;
+         display: block;
+         padding: 15px;
+         text-decoration: none;
+         text-transform: uppercase;
+         cursor: pointer;
+         z-index: 1;
+         position: relative;
+         -webkit-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -moz-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -ms-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -o-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+
+         &:hover {
+           color: $light-grey;
+           -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+         }
+
+         &:active {
+           background-color: $light-grey;
+           color: white;
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           box-shadow: none;
+         }
+       }
+     }
+   }
+ }
+
+ #root {
+   height: 100%;
+ }
+
+ h2 {
+   font-size: 32px;
+ }
+
+ h3 {
+   font-size: 24px;
+   text-align: center;
+   color: $black;
+ }
+
+.main {
+  display: flex;
+  // justify-content: space-around;
+}
+
+.poke-list {
+
+}
+
+.poke-pic {
+  height: 50px;
+  width: 50px;
+}
+
+.all-poke-list {
+  width: 200px;
+  background-color: #d13608;
+  list-style: none;
+  padding-left: 0px;
+  border-right: 2px solid black;
+}
+
+.poke-li {
+  border-bottom: 2px solid black;
+  padding: 5px 20px;
+}
+
+.poke-li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.poke-li span {
+  color: white;
+  font-style: bold;
+  font-size: 16px;
+  padding-left: 14px;
+}
+
+.poke-li:hover {
+  color: $light-grey;
+  background-color: red;
+}
+
+.poke-details-container {
+  width: calc(100% - 200px);
+  justify-content: center;
+}
+
+.poke-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid black;
+  background-color: lightgrey;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  color: black;
+}
+
+.poke-details .big-poke-pic {
+  background-color: grey;
+  padding: 10px 80px;
+  margin-bottom: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 48px;
+}
+
+.detail {
+  font-size: 24px;
+  margin: 5px 0px;
+}
+
+.item-container {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  border: 3px solid darkgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item-list {
+  background-color: white;
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid darkgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.li-item-pic {
+
+}
+
+.item-pic {
+  box-sizing: border-box;
+  width: 170px;
+  padding: 10px 10px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+.li-item-pic img:active {
+  box-sizing: border-box;
+  position: relative;
+  top: 3px;
+  border-bottom: 1px solid grey;
+}

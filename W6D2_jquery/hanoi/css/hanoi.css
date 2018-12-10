@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+  font-size: 52px;
+  font-family: sans-serif;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+
+.hanoi {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+}
+
+.hanoi ul {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-right: 20px;
+  border-bottom: 10px solid black;
+  padding-bottom: 10px;
+  height: 120px;
+}
+
+.hanoi tower:hover {
+  border-bottom: 10px solid red;
+}
+
+.hanoi li {
+  display: block;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.disc-three {
+  background-color: red;
+  width: 100%;
+}
+
+.disc-two {
+  background-color: purple;
+  width: 75%;
+}
+
+.disc-one {
+  background-color: blue;
+  width: 50%;
+}
+
+.hanoi ul.selected-pile {
+  border-bottom: 10px solid blue;
+}
+
+/* .hanoi ul.selected-pile:hover {
+  border-bottom: 10px solid blue;
+} */
+
+
+.hanoi li.finished-disc {
+  background-color: #584531;
+  margin-bottom: 0px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+img {
+  display: none;
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+  width: 70px;
+}
+
+.show-face {
+  display: block;
+}

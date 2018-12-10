@@ -1,0 +1,12 @@
+<h2><%= record.name %></h2>
+
+<% children.each do |record| %>
+  <section>
+    <h3><%= record.name %></h3>
+    <a href="<%= view.call(record.id) %>">View</a>
+    <% if record.user == current_user %>
+      <a href="<%= edit.call(record.id) %>">Edit</a>
+    <% end %>
+  </section>
+
+<% end %>

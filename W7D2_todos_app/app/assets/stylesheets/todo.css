@@ -1,0 +1,142 @@
+* {
+  font-family: 'Roboto Slab';
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.total-body-workout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.todo-item, .todo-item-expanded {
+  list-style: none;
+  border: 1px solid aqua;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 20px 40px;
+  margin: 20px 0px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item {
+  height: 150px;
+}
+
+.todo-item-expanded {
+  height: 250px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 170px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.todo-body {
+  position: relative;
+  top: -15px;
+}
+
+.complete {
+  background-color: pink;
+  font-size: 16px;
+  color: darkgreen;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+}
+
+.incomplete {
+  background-color: lightgreen;
+  font-size: 16px;
+  color: darkgreen;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+}
+
+.delete {
+  background-color: pink;
+  font-size: 16px;
+  color: darkgreen;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+}
+
+.form-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid aqua;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 20px 40px 20px 40px;
+  /* margin: 20px; */
+  width: 500px;
+}
+
+.input-box {
+  display: flex;
+  padding: 0px 30px 15px 30px;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.submit-todo {
+  background-color: lightgreen;
+  font-size: 16px;
+  color: darkgreen;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+  width: 170px;
+}
+
+input {
+  width: 200px;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+#title {
+
+}
+
+#body {
+
+}

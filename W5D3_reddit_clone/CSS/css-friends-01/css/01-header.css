@@ -1,0 +1,33 @@
+/* PHASE 1: Header */
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #f00;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  margin: 0px 100px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  font-weight: bold;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #eee;
+  margin-right: 100px;
+  font-weight: 300;
+
+}
+
+.header-menu > li {
+  border-left: 1px solid #eee;
+  padding: 10px 20px
+}

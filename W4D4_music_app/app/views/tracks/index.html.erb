@@ -1,0 +1,4 @@
+<% view = Proc.new { |id| track_url(id) } %>
+<% edit = Proc.new { |id| edit_track_url(id) } %>
+
+<%= render 'shared/standard_list', title: 'Tracks', records: @tracks, view: view, edit: edit %>
