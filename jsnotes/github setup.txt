@@ -1,0 +1,19 @@
+Create the repo folder on the computer with files in it
+
+Go to github and create a new folder with the same name
+
+In the New Respository screen, it'll give you a url to use, but that just follows:
+
+https://github.com/vanduynamite/new-repo-name.git
+
+Back on the computer, navigate to the repo directory
+
+type:
+git init
+git add .
+git commit -m "comment"
+git remote add origin <the url above>
+git remote -v //this one is just to make sure you didn't get that url incorrectly
+git push -u origin master
+
+That's it I believe!
